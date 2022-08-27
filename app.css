@@ -196,7 +196,7 @@ header ul .active {
     opacity: 0;
     width: 100%;
     height: 100%;
-    background-image: url(images/original-test-4.png);
+    background-image: url(images/original-test-4-min.png);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 50% 130px;
@@ -230,7 +230,7 @@ header ul .active {
     position: absolute; top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(images/carousel-bg.jpg);
+    background-image: url(images/carousel_bg-min.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     filter: grayscale(10%) contrast(120%) blur(5px);
