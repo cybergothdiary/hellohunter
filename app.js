@@ -4,7 +4,7 @@ const logotype = document.querySelector('#logotype');
 const dropDown = document.querySelector('#dropdown-toggle')
 const submenu = document.querySelector('#submenu');
 
-if (isHomePage === '/index.html' || isHomePage === '/') { // Home page
+if (isHomePage === '/index.html' || isHomePage === '/' || isHomePage === '/hellohunter/') { // Home page
     const stars = document.querySelector('#stars');
     const moon = document.querySelector('#moon');
     const mountainsBehind = document.querySelector('#mountains-behind');
