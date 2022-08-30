@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <title>«Hello Hunter!»</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="app.css">
 </head>
-<body>
+<body id="homepage">
     <header>
         <nav>
             <ul>
                 <li><a href="" class="active general-link">Home</a></li>
                 <li>
                     <div id="submenu">
-                        <div><a href="">Gon Freecs</a></div>
-                        <div><a href="">Leorio Paradinight</a></div>
-                        <div><a href="">Kurapika Kurta</a></div>
-                        <div><a href="">Chrollo Lucifer</a></div>
-                        <div><a href="">Killua Zoldyck</a></div>
-                        <div><a href="">Alluka Zoldyck</a></div>
-                        <div><a href="">Silva Zoldyck</a></div>
-                        <div><a href="">Zeno Zoldyck</a></div>
-                        <div><a href="">Hisoka Morow</a></div>
-                        <div><a href="">Meruem the King</a></div>
-                        <div><a href="">Neferpitou</a></div>
-                        <div><a href="">Isaac Netero</a></div>
+                        <div><a href="characters/gon.html">Gon Freecs</a></div>
+                        <div><a href="characters/leorio.html">Leorio Paradinight</a></div>
+                        <div><a href="characters/kurapika.html">Kurapika Kurta</a></div>
+                        <div><a href="characters/chrollo.html">Chrollo Lucifer</a></div>
+                        <div><a href="characters/killua.html">Killua Zoldyck</a></div>
+                        <div><a href="characters/alluka.html">Alluka Zoldyck</a></div>
+                        <div><a href="characters/silva.html">Silva Zoldyck</a></div>
+                        <div><a href="characters/zeno.html">Zeno Zoldyck</a></div>
+                        <div><a href="characters/hisoka.html">Hisoka Morow</a></div>
+                        <div><a href="characters/meruem.html">Meruem the King</a></div>
+                        <div><a href="characters/netero.html">Isaac Netero</a></div>
+                        <div><a href="characters/neferpitou.html">Neferpitou</a></div>
                     </div>
                     <span id="dropdown-toggle" class="general-link">Universe & Characters</span>
                 </li>
-                <li><a href="" class="general-link">Clans & Unions</a></li>
-                <li><a href="" class="general-link">Arcs</a></li>
+                <li><a href="" class="general-link">Web API</a></li>
+                <li><a href="#carousel" class="general-link">Carousel</a></li>
+                <li><a href="#arcs" class="general-link">Arcs</a></li>
             </ul>
         </nav>
-        <div class="logo"><a href="">Logo</a></div>
+        <div>
+            <img id="logotype" src="images/logotype-AM.png" alt="Aliens Membership logo">
+        </div>
     </header>
     <div class="parallax-section">
         <img id="stars" src="images/stars-min.png" alt="">
@@ -44,9 +47,9 @@
         <img id="mountains-front" src="images/mountains_front-min.png" alt="">
         <img id="kurapika" src="images/pre_kurapika-min.png" alt="">
     </div>
-    <div class="section">
-        <div id="kurapika-kuroro" class="section-bg"></div>
-        <div class="section-content">
+    <div class="introduction-section">
+        <div id="kurapika-kuroro" class="introduction-bg"></div>
+        <div class="introduction-content">
             <h2>Hunter x Hunter (2011 TV series)</h2>
             <p>
                 Kindness and amity <b>or</b> indifference by blood?<br>
@@ -70,7 +73,7 @@
             </p>
         </div>
     </div>
-    <div class="carousel-section">
+    <div id="carousel" class="carousel-section">
         <div class="section-bg-2"></div>
         <h2>Which character are you interested in?</h2>
         <div class="carousel-wrap">
@@ -79,69 +82,339 @@
                 <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                    <a href="">
-                        <img src="images/charcs/re-killua-min.png">
+                    <a href="characters/killua.html">
+                        <img src="images/charcs/re-killua-min.png" alt="Killua Zoldyck">
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="">
-                        <img src="images/charcs/re-gon-min.png">
+                    <a href="characters/gon.html">
+                        <img src="images/charcs/re-gon-min.png" alt="Gon Freecs">
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="">
-                        <img src="images/charcs/re-leorio-min.png">
+                    <a href="characters/leorio.html">
+                        <img src="images/charcs/re-leorio-min.png" alt="Leorio Paradinight">
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="">
-                        <img src="images/charcs/re-kurapika-min.png">
+                    <a href="characters/kurapika.html">
+                        <img src="images/charcs/re-kurapika-min.png" alt="Kurapika Kurta">
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="">
-                        <img src="images/charcs/re-hisoka-min.png">
+                    <a href="characters/hisoka.html">
+                        <img src="images/charcs/re-hisoka-min.png" alt="Hisoka Morow">
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="">
-                        <img src="images/charcs/re-chrollo-min.png">
+                    <a href="characters/chrollo.html">
+                        <img src="images/charcs/re-chrollo-min.png" alt="Chrollo Lucifer">
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="">
-                        <img src="images/charcs/re-alluka-min.png">
+                    <a href="characters/alluka.html">
+                        <img src="images/charcs/re-alluka-min.png" alt="Alluka Zoldyck">
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="">
-                        <img src="images/charcs/re-silva-min.png">
+                    <a href="characters/silva.html">
+                        <img src="images/charcs/re-silva-min.png" alt="Silva Zoldyck">
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="">
-                        <img src="images/charcs/re-zeno-min.png">
+                    <a href="characters/zeno.html">
+                        <img src="images/charcs/re-zeno-min.png" alt="Zeno Zoldyck">
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="">
-                        <img src="images/charcs/re-netero-min.png">
+                    <a href="characters/netero.html">
+                        <img src="images/charcs/re-netero-min.png" alt="Isaac Netero">
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="">
-                        <img src="images/charcs/re-meruem-min.png">
+                    <a href="characters/meruem.html">
+                        <img src="images/charcs/re-meruem-min.png" alt="Meruem the King">
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="">
-                        <img src="images/charcs/re-neferpitou-min.png">
+                    <a href="characters/neferpitou.html">
+                        <img src="images/charcs/re-neferpitou-min.png" alt="Neferpitou">
                     </a>
                   </div>
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div class="arc-section">
+        <div class="container">
+            <h2 id="arcs">Story Arcs & Episodes</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Hunter Exam<br>2011 Series</th>
+                    <th>Zoldyck Family<br>2011 Series</th>
+                    <th>Heavens Arena<br>2011 Series</th>
+                    <th>Yorknew City<br>2011 Series</th>
+                    <th>Greed Island<br>2011 Series</th>
+                    <th>Chimera Ant<br>2011 Series</th>
+                    <th>Hunter Chairman Election<br>2011 Series</th>
+                </tr>
+                <tr>
+                    <td class="td-header">Volumes:</td>
+                    <td>1-7</td>
+                    <td>8</td>
+                    <td>9-12</td>
+                    <td>13-19</td>
+                    <td>20-24</td>
+                    <td>25-44</td>
+                    <td>45-49</td>
+                </tr>
+                <tr>
+                    <td class="td-header">Episodes:</td>
+                    <td>21</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>22</td>
+                    <td>17</td>
+                    <td>61</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td class="td-header">Catalog:</td>
+                    <td>
+                        <div class="table-scroll">
+                            <ul>
+                                <li>01: Departure And Friends</li>
+                                <li>02: Test of Tests</li>
+                                <li>03: Rivals for Survival</li>
+                                <li>04: Hope and Ambition</li>
+                                <li>05: Hisoka is Sneaky</li>
+                                <li>06: An Unexpected Task</li>
+                                <li>07: Showdown On The Airship</li>
+                                <li>08: Decision By Majority?</li>
+                                <li>09: Beware Of Prisoners</li>
+                                <li>10: Trick To The Trick</li>
+                                <li>11: Trouble With The Gamble</li>
+                                <li>12: Last Test Of Resolve!</li>
+                                <li>13: Letter From Gon</li>
+                                <li>14: Hit The Target</li>
+                                <li>15: Explosion Of Deception!</li>
+                                <li>16: Defeat And Disgrace</li>
+                                <li>17: Trap In The Hole</li>
+                                <li>18: Big Time Interview</li>
+                                <li>19: Can't Win But Can't Lose</li>
+                                <li>20: Baffling Turn Of Events</li>
+                                <li>21: Some Brother Trouble</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-scroll">
+                            <ul>
+                                <li>22. A Dangerous Watchdog</li>
+                                <li>23. The Guard's Duty</li>
+                                <li>24. The Zoldyck Family</li>
+                                <li>25. Can't See If You're Blind</li>
+                                <li>26. Then And After</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-scroll">
+                            <ul>
+                                <li>27. Arrival At The Arena</li>
+                                <li>28. Nen And Nen</li>
+                                <li>29. Awakening And Potential</li>
+                                <li>30. Fierce And Ferocious</li>
+                                <li>31. Destiny And Tenacity</li>
+                                <li>32. A Surprising Win</li>
+                                <li>33. An Empty Threat</li>
+                                <li>34. Power To Avenge</li>
+                                <li>35. The True Pass</li>
+                                <li>36. A Big Debt And A Small Kick</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-scroll">
+                            <ul>
+                                <li>37. Ging And Gon</li>
+                                <li>38. Reply From Dad</li>
+                                <li>39. Wish And Promise</li>
+                                <li>40. Nen Users Unite?</li>
+                                <li>41. Gathering Of Heroes</li>
+                                <li>42. Defend And Attack</li>
+                                <li>43. A Shocking Tragedy</li>
+                                <li>44. Buildup To A Fierce Battle!</li>
+                                <li>45. Restraint And Vow</li>
+                                <li>46. Chasing And Waiting</li>
+                                <li>47. Condition And Condition</li>
+                                <li>48. Very Sharp Eye</li>
+                                <li>49. Pursuit And Analysis</li>
+                                <li>50. Ally And Sword</li>
+                                <li>51. A Brutal Battlefield</li>
+                                <li>52. Assault And Impact</li>
+                                <li>53. Fake And Psyche</li>
+                                <li>54. Fortunes Aren't Right?</li>
+                                <li>55. Allies And Lies</li>
+                                <li>56. Beloved And Beleaguered</li>
+                                <li>57. Initiative And Law</li>
+                                <li>58. Signal To Retreat</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-scroll">
+                            <ul>
+                                <li>59. Bid And Haste</li>
+                                <li>60. End And Beginning</li>
+                                <li>61. Invitation And Friend</li>
+                                <li>62. Reality? And Raw</li>
+                                <li>63. A Hard Master?</li>
+                                <li>64. Strengthen And Threaten</li>
+                                <li>65. Evil Fist And Rock-Paper-Scissors</li>
+                                <li>66. Strategy And Scheme</li>
+                                <li>67. 15 x 15</li>
+                                <li>68. Pirates And Guesses</li>
+                                <li>69. A Heated Showdown</li>
+                                <li>70. Guts And Courage</li>
+                                <li>71. Bargain And Deal</li>
+                                <li>72. Chase And Chance</li>
+                                <li>73. Insanity And Sanity</li>
+                                <li>74. Victor And Loser</li>
+                                <li>75. Ging's Friends And True Friends</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-scroll">
+                            <ul>
+                                <li>76. Reunion And Understanding</li>
+                                <li>77. Unease And Sighting</li>
+                                <li>78. Very Rapid Reproduction</li>
+                                <li>79. No Good NGL</li>
+                                <li>80. Evil And Terrible</li>
+                                <li>81. The Fight Begins</li>
+                                <li>82. Kite And Slots</li>
+                                <li>83. Inspiration To Evolve</li>
+                                <li>84. A Fated Awakening</li>
+                                <li>85. Light And Darkness</li>
+                                <li>86. Promise And Reunion</li>
+                                <li>87. Duel And Escape</li>
+                                <li>88. Rock-Paper-Scissors And Weakness</li>
+                                <li>89. Compassion And Strength</li>
+                                <li>90. Slow And Cursed</li>
+                                <li>91. The Strong And The Weak</li>
+                                <li>92. One Wish And Two Promises</li>
+                                <li>93. Date With Palm</li>
+                                <li>94. Friend And Journey</li>
+                                <li>95. Grudge And Dread</li>
+                                <li>96. A Lawless Home</li>
+                                <li>97. Carnage And Devastation</li>
+                                <li>98. Infiltration And Selection</li>
+                                <li>99. Combination And Evolution</li>
+                                <li>100. Tracking And Pursuit</li>
+                                <li>101. Ikalgo And Lightning</li>
+                                <li>102. Power And Games</li>
+                                <li>103. Check And Mate</li>
+                                <li>104. Doubt And Hesitation</li>
+                                <li>105. Resolve And Awakening</li>
+                                <li>106. Knov And Morel</li>
+                                <li>107. Return And Retire</li>
+                                <li>108. Gungi Of Komugi</li>
+                                <li>109. Taking Stock And Taking Action</li>
+                                <li>110. Confusion And Expectation</li>
+                                <li>111. Charge And Invade</li>
+                                <li>112. Monster And Monster</li>
+                                <li>113. An Indebted Insect</li>
+                                <li>114. Divide And Conquer</li>
+                                <li>115. Duty And Question</li>
+                                <li>116. Revenge And Recovery</li>
+                                <li>117. Insult And Payback</li>
+                                <li>118. A False Revenge</li>
+                                <li>119. Strong Or Weak</li>
+                                <li>120. Fake And Real</li>
+                                <li>121. Defeat And Dignity</li>
+                                <li>122. Pose And Name</li>
+                                <li>123. Centipede And Memory</li>
+                                <li>124. Breakdown And Awakening</li>
+                                <li>125. Great Power And Ultimate Power</li>
+                                <li>126. Zero And Rose</li>
+                                <li>127. Hostility And Determination</li>
+                                <li>128. Unparalleled Joy And Unconditional Love</li>
+                                <li>129. Formidable Enemy And Clear Objective</li>
+                                <li>130. Magic to Destroy</li>
+                                <li>131. Anger And Light</li>
+                                <li>132. Flash And Start</li>
+                                <li>133. Deadline To Live</li>
+                                <li>134. The Word Is You</li>
+                                <li>135. This Person And This Moment</li>
+                                <li>136. Homecoming And Real Name</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-scroll">
+                            <ul>
+                                <li>137. Debate Among Zodiacs</li>
+                                <li>138. Request And Wish</li>
+                                <li>139. Alluka And Something</li>
+                                <li>140. Join Battle And Open Battle</li>
+                                <li>141. Magician And Butler</li>
+                                <li>142. Needle And Debt</li>
+                                <li>143. Sin And Claw</li>
+                                <li>144. Approval And Coalition</li>
+                                <li>145. Defeat And Reunion</li>
+                                <li>146. Chairman And Release</li>
+                                <li>147. Salvation And Future</li>
+                                <li>148. Past And Future</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="arc-description">
+                <h3>Arcs description in a nutshell:</h3>
+                <ul>
+                    <li>
+                        <p>
+                            <b>Hunter Exam:</b> The journey begins with Gon taking a series of bizarre tests to become a Hunter, which includes navigating a deadly jungle, hunting other applicants, killing a wild boar, an extraordinarily long underground marathon, and making sushi. During the Hunter Exam, Gon meets and befriends three of the applicants, Kurapika, Killua, and Leorio. The series' first antagonist is also introduced as one of the applicants. Hisoka is a complex villain who uses playing cards as weapons and views Gon as an "unripe fruit" that he will take great pleasure in killing once he's grown up enough to present a challenge. Before the end of the Hunter Exam, Killua faces his brother, Illumi, who makes him come home before he can even finish the exam.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Zoldyck Family:</b> After passing the Hunter Exam, Gon, Kurapika, and Leorio go off on a new adventure to spring Killua from his parents' mansion in Kukuroo Mountain. After the three reunite with Killua, Leorio leaves for medical school so he can become a professional doctor, and Kurapika leaves to find work as a bounty hunter. Gon and Killua decide to go together to Heavens Arena so they can gain combat experience by training.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Heavens Arena:</b> Gon and Killua go to Heavens Arena, a 251-floor building where people compete through fighting tournaments around the clock for cash. It is here they meet the Kung-Fu master Wing, who teaches them about Nen, a chi-like energy that can be used to manifest superhuman powers. He teaches a young child named Zushi, who joins Gon and Killua to fight in the tournament to gain money and experience. Hisoka is also in the tournament. Gon finally gets to battle Hisoka again, to show off how much he has improved.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Yorknew City:</b> The four main characters reunite for the world's largest auction in a sprawling metropolis named Yorknew City. Gon, Killua, and Leorio try different methods to make enough money to buy Greed Island, a JoyStation Console video game which could help Gon find his father. Meanwhile, Kurapika works as a bodyguard for Neon Nostrade, a flesh collector and daughter to the head of a Mafia family, in order for him to get closer to his clan's Scarlet Eyes which are set to be auctioned in the same city. The Phantom Troupe, a group of thieves, who had slaughtered Kurapika's clan, are also gathering at Yorknew City.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Greed Island:</b> Gon, Killua, and Leorio return to help Kurapika’s recovery after the battle against the Phantom Troupe. Leorio and Kurapika leave again, returning the focus to Gon and Killua. Gon and Killua are able to join a team hired by the billionaire, Battera, to play the game. Gon and Killua are joined and later Nen-trained by Biscuit Krueger, a 57-year-old woman who looks like a 12-year-old girl, and is a master and experienced teacher of Nen. As the story progresses, a player nicknamed the Bomber is blowing other players up. Gon, Killua, and Biscuit team up with other players and take the Bomber out. The Phantom Troupe also travels to Greed Island, looking for a Nen-remover to remove the Nen blade on Chrollo Lucilfer, put by Kurapika to null his powers.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Chimera Ant:</b> After leaving Greed Island, Gon and Killua meet up with Kite. They're all hired to investigate a strange insect leg that washed up on a beach. Genetic testing determines that the leg belongs to an abnormally large Chimera Ant Queen, which just happens to wash up on the shore of an island called the NGL (Neo-Green Life). The Chimera Ants proceed to wipe most of the population out and spawn hundreds of offspring for next generation before Gon, Killua, and Kite arrive to stop her.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Hunter Chairman Election:</b> Netero, the Hunter chairman has passed away after his confrontation with the Chimera Ant King, Meruem. A new Hunter chairman is needed, so the Zodiacs are gathered to establish a new election for their new Hunter chairman. Ging Freecss, one of the Zodiac members is leading the establishment. Leorio returns and quickly rises to prominence as a top candidate in the election. These events act as a backdrop to the efforts of Killua and his servants, who wish to revive a hospitalized Gon using the Nen ability of Alluka Zoldyck. Illumi, aided by Hisoka, attempts to stop Killua due to the potential dangers attached to using Alluka's powers.
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

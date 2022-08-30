@@ -10,6 +10,10 @@
 html {
     scroll-behavior: smooth;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
 a {
     text-decoration: none; color: #fff;
 }
@@ -20,42 +24,30 @@ hr {
     width: 25%;
     margin: 0 auto;
 }
-
-/* Scroll Bar */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #1c0522;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: rgb(56, 0, 65);
-  }
-
-/* ------------------------ */
-
-body {
-    min-height: 100vh;
-    /* background: linear-gradient(#2b1055,#7597de); */
-    background: linear-gradient(#17243f,#416593);
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
 }
+::-webkit-scrollbar-track {
+    background: #1c0522;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(56, 0, 65);
+}
+
+/* ----------- HEADER ----------- */
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 7%;
+    padding: 40px 7%;
     position: relative;
     z-index: 100;
 }
-.logo a {
-    color: #fff;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: bold;
+#logotype {
+    opacity: 0;
+    transition: opacity 2s ease-in;
+    width: 250px;
 }
 header ul {
     display: flex;
@@ -66,57 +58,15 @@ header ul li {
 .general-link {
     font-size: 1.2rem;
     color: #fff;
-    margin: 0 1em;
+    margin: 0 .7em;
     padding: .5em .7em;
-    transition: background-color .25s,
-                color .35s;
+    transition: background-color .25s, color .35s;
     border-radius: 50px;
 }
 .general-link:hover,
 header ul .active {
     background-color: #fff;
     color: #000;
-}
-
-.parallax-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-.parallax-section::before {
-    content: '';
-    position: absolute; bottom: 0; left: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, var(--sect-color1), transparent);
-    z-index: 100;
-}
-.parallax-section img {
-    position: absolute; top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-#stars {
-    transform: translateY(-120px);
-    opacity: 0.5;
-    transition: opacity 2s ease-out;
-}
-#moon {
-    mix-blend-mode: lighten;
-    transform: translateY(-120px);
-    opacity: 0;
-    transition: opacity 3s ease-in;
-}
-#kurapika {
-    object-fit: contain;
-    top: unset; bottom: 0;
-    height: 50px;
-    opacity: 0;
-    transform: translate(0, -100vh);
-    transition: transform 2.2s, opacity 2.5s ease-in-out, height 3.2s;
-    filter: saturate(50%) contrast(105%);
 }
 
 /* Dropdown menu */
@@ -174,16 +124,63 @@ header ul .active {
     color: rgba(0,0,0,0);
 }
 
-/* -------------- */
+/* ------------------------------------------ */
+/* --------------- INDEX.HTML --------------- */
 
-.section {
+#homepage {
+    min-height: 100vh;
+    background: linear-gradient(#17243f,#416593);
+    /* background: linear-gradient(#2b1055,#7597de); */
+}
+.parallax-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.parallax-section::before {
+    content: '';
+    position: absolute; bottom: 0; left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, var(--sect-color1), transparent);
+    z-index: 100;
+}
+.parallax-section img {
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#stars {
+    transform: translateY(-120px);
+    opacity: 0.5;
+    transition: opacity 2s ease-out;
+}
+#moon {
+    mix-blend-mode: lighten;
+    transform: translateY(-120px);
+    opacity: 0;
+    transition: opacity 3s ease-in;
+}
+#kurapika {
+    object-fit: contain;
+    top: unset; bottom: 0;
+    height: 400px;
+    opacity: 0;
+    transform: translate(0, -100vh);
+    transition: transform 2.2s, opacity 2.5s ease-in-out, height 1.5s;
+    filter: saturate(50%) contrast(105%);
+}
+/* ------- Intoduction ------- */
+.introduction-section {
     overflow: hidden;
     position: relative;
     padding: 50px 8% 150px;
     background-color: var(--sect-color1);
     color: rgb(255, 218, 218);
 }
-.section::before {
+.introduction-section::before {
     content: '';
     position: absolute; bottom: 0; left: 0;
     width: 100%;
@@ -191,28 +188,27 @@ header ul .active {
     background: linear-gradient(to top, var(--sect-color2), transparent);
     z-index: 100;
 }
-.section-bg {
+.introduction-bg {
     position: absolute; top: 0; left: 0;
     opacity: 0;
     width: 100%;
     height: 100%;
-    background-image: url(images/original-test-4-min.png);
+    background-image: url(images/introduction_bg-min.png);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 50% 130px;
     transition: opacity 7s;
 }
-
-.section-content {
+.introduction-content {
     position: relative;
     z-index: 100;
 }
-.section h2 {
+.introduction-content h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5em;
     text-align: center;
 }
-.section p {
+.introduction-content p {
     font-size: 1.5rem;
     line-height: 1.4em;
     max-width: 95ch;
@@ -220,7 +216,7 @@ header ul .active {
     text-align: center;
 }
 
-/* JS + CSS Carousel */
+/* -------- Swiper-Carousel ------- */
 .carousel-section {
     position: relative;
     background-color: var(--sect-color2);
@@ -281,4 +277,118 @@ header ul .active {
     color: rgb(0, 82, 170);
 }
 
-/* Arcs Table section */
+/* ------- Arcs & Episodes -------- */
+.arc-section {
+    position: relative;
+    /* background: linear-gradient(to bottom, #500333, #221f1f); */
+    background: linear-gradient(to bottom, #280119, #221f1f);
+    padding: 90px 0;
+    color: #fff;
+    text-align: center;
+}
+.arc-section::before {
+    content: '';
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--sect-color2), #280119);
+    z-index: 100;
+}
+.arc-section .container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1600px;
+}
+.arc-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.3em;
+    padding-top: 15px;
+}
+table {
+    font-size: 1rem;
+}
+table td {
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    vertical-align: text-top;
+    padding: 0 .1em;
+}
+.table-scroll {
+    height: 560px;
+    overflow: auto;
+    padding: 0 .8em;
+}
+.table-scroll::-webkit-scrollbar {
+    width: 5px;
+}
+.table-scroll::-webkit-scrollbar-track {
+    background: #32002e;
+}
+.table-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.7);
+}
+table th {
+    padding-bottom: 2em;
+}
+table li {
+    margin: 1.2em 0;
+    line-height: 1.2em;
+}
+.td-header {
+    width: 30px;
+    padding: 1em;
+    text-align: left;
+}
+.arc-description {
+    padding: 10px;
+    height: 300px;
+    overflow: auto;
+    margin-top: 30px;
+    text-align: left;
+}
+.arc-description h3 {
+    font-size: 1.5rem;
+}
+.arc-description ul {
+    list-style:decimal-leading-zero;
+}
+.arc-description li {
+    margin: 1em auto;
+    max-width: 120ch;
+    font-size: 1.25rem;
+    line-height: 1.3em;
+}
+.arc-description::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* ------------------------------------------ */
+/* --------------- CHROLLO.HTML --------------- */
+
+#charpage {
+    min-height: 100vh;
+    /* overflow-y: hidden; */
+    background-color: rgb(19, 17, 17);
+}
+.video-bg {
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    /* filter: blur(15px) contrast(120%) brightness(30%); */
+    filter: saturate(50%) blur(15px) brightness(50%);
+
+    /* 
+        filter: blur(5px);
+        filter: brightness(0.4);
+        filter: contrast(200%);
+        filter: drop-shadow(16px 16px 20px blue);
+        filter: grayscale(50%);
+        filter: hue-rotate(90deg);
+        filter: invert(75%);
+        filter: opacity(25%);
+        filter: saturate(30%);
+        filter: sepia(60%);
+    */
+}
