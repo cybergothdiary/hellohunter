@@ -1,5 +1,6 @@
 :root {
-    --sect-color1: #000000;
+    /* --sect-color1: #000; */
+    --sect-color1: #060606;
     /* --sect-color2: #1a001f; */
     --sect-color2: #060505;
 }
@@ -9,6 +10,8 @@
 }
 html {
     scroll-behavior: smooth;
+    scrollbar-color: #1c0522 #380041;
+    scrollbar-width: thin;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -27,7 +30,7 @@ ul, ol {
     background: #1c0522;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(56, 0, 65);
+    background: #380041;
 }
 
 /* ----------- HEADER ----------- */
@@ -126,6 +129,7 @@ header ul .active {
 #homepage {
     min-height: 100vh;
     background: linear-gradient(#17243f,#416593);
+
     /* background: linear-gradient(#2b1055,#7597de); */
 }
 .parallax-section {
@@ -277,20 +281,32 @@ header ul .active {
 .arc-section {
     position: relative;
     /* background: linear-gradient(to bottom, #500333, #221f1f); */
-    background: linear-gradient(to bottom, #280119, #221f1f);
+    /* background: linear-gradient(to bottom, #280119, #221f1f); */
     padding: 90px 0;
     color: #fff;
     text-align: center;
 }
-.arc-section::before {
-    content: '';
+.arc-bg {
     position: absolute; top: 0; left: 0;
     width: 100%;
-    height: 40px;
-    background: linear-gradient(to bottom, var(--sect-color2), #280119);
+    height: 100%;
+    background-image: url(images/arc_bg-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 100px 0 5px #000;
+    filter: grayscale(10%) contrast(200%) brightness(30%);
+}
+.arc-section::before {
+    content: '';
+    position: absolute; top: -20px; left: -30px;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to bottom, var(--sect-color2), #000000);
+    filter: blur(10px);
     z-index: 100;
 }
 .arc-section .container {
+    position: relative;
     margin: 0 auto;
     width: 90%;
     max-width: 1600px;
@@ -311,6 +327,8 @@ table td {
 .table-scroll {
     height: 560px;
     overflow: auto;
+    scrollbar-color: rgba(255, 255, 255, 0.7) #32002e;
+    scrollbar-width: thin;
     padding: 0 .8em;
 }
 .table-scroll::-webkit-scrollbar {
@@ -338,6 +356,8 @@ table td {
     padding: 10px;
     height: 300px;
     overflow: auto;
+    scrollbar-color: rgba(255, 255, 255, 0.7) #7c2c76;
+    scrollbar-width: thin;
     margin-top: 30px;
     text-align: left;
 }
@@ -377,7 +397,7 @@ table td {
     position: absolute; top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(images/api_bg.jpg);
+    background-image: url(images/api_bg-min.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     filter: grayscale(40%) contrast(30%) blur(10px);
@@ -428,6 +448,8 @@ table td {
     min-width: 1000px;
     margin: 20px 0;
     overflow: auto;
+    scrollbar-color: rgba(255, 255, 255, 0.7) grey;
+    scrollbar-width: thin;
     height: 260px;
 }
 .api-example p {
@@ -452,11 +474,10 @@ table td {
 
 
 /* ------------------------------------------ */
-/* --------------- CHROLLO.HTML --------------- */
+/* --------------- CHARPAGE --------------- */
 
 #charpage {
     min-height: 100vh;
-    /* overflow-y: hidden; */
     background-color: rgb(19, 17, 17);
 }
 .video-bg {
@@ -505,16 +526,16 @@ table td {
     font-size: 1.1rem;
 }
 .char-table :is(td, th) {
-    /* border: 1px solid #fff; */
     box-shadow: unset;
     padding: .4em 2em;
 }
-
 
 .char-article-wrap {
     flex: 50%;
     height: 400px;
     overflow: auto;
+    scrollbar-color: rgba(255, 255, 255, 0.7) rgb(73, 73, 73);
+    scrollbar-width: thin;
 }
 .char-article-wrap::-webkit-scrollbar {
     width: 5px;
