@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web API</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body id="apipage">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/hellohunter/" class="general-link">Home</a></li>
+                <li>
+                    <div id="submenu">
+                        <div><a href="./characters/gon">Gon Freecs</a></div>
+                        <div><a href="./characters/leorio">Leorio Paradinight</a></div>
+                        <div><a href="./characters/kurapika">Kurapika Kurta</a></div>
+                        <div><a href="./characters/chrollo">Chrollo Lucifer</a></div>
+                        <div><a href="./characters/killua">Killua Zoldyck</a></div>
+                        <div><a href="./characters/alluka">Alluka Zoldyck</a></div>
+                        <div><a href="./characters/silva">Silva Zoldyck</a></div>
+                        <div><a href="./characters/zeno">Zeno Zoldyck</a></div>
+                        <div><a href="./characters/hisoka">Hisoka Morow</a></div>
+                        <div><a href="./characters/meruem">Meruem the King</a></div>
+                        <div><a href="./characters/netero">Isaac Netero</a></div>
+                        <div><a href="./characters/neferpitou">Neferpitou</a></div>
+                    </div>
+                    <span id="dropdown-toggle" class="general-link">Universe & Characters</span>
+                </li>
+                <li><a href="./api" class="active general-link">Web API</a></li>
+                <li><a href="./#carousel" class="general-link">Carousel</a></li>
+                <li><a href="./#arcs" class="general-link">Arcs</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img id="logotype" src="images/logotype-AM.png" alt="Aliens Membership logo">
+        </div>
+    </header>
+    <div class="api-bg"></div>
+
+    <div class="api-section">
+        <div class="api-introduction">
+            <h2>We are pleased to present our own Web API</h2>
+            <p>
+                <i>Web API</i>  provides a user with compact and quick list of character's data, taken and built from the universe of HxH anime.
+                <br>In order to use, you don't need to get any key or token. Just name your character and let's go!
+            </p>
+        </div>
+        <div class="api-doc-block">
+            <h3>API response format:</h3>
+            <p>
+                You will get a response of JSON formatted data.
+                <br>In fact, at this time it includes <b>much more data than what is displayed on the website</b>.
+            </p>
+        </div>
+        <div class="api-doc-block">
+            <h3>How should I use it?</h3>
+            <p>
+                Send a query request to the <span>https://hellohunter.herokuapp.com/api/characters?name=</span>, where the key <span>name</span> must have a value with the character's name.
+                <br><b>GET/</b> requests supported only!
+            </p>
+        </div>
+        <div class="api-doc-block">
+            <h3>Examples:</h3>
+            <div class="api-example">
+                <p>
+                    <b>GET/:</b> https://hellohunter.herokuapp.com/api/characters?name=<i>Killua</i>
+                    <br><b>...</b>
+                    <br>Status: <b>200 (OK), JSON response</b>:
+                    <br>&emsp;{
+                    <br>&emsp;&emsp;"id": 5,
+                    <br>&emsp;&emsp;"name": "Killua Zoldyck",
+                    <br>&emsp;&emsp;"age": "12",
+                    <br>&emsp;&emsp;<b>...</b>
+                    <br>&emsp;}
+                </p>
+                <hr>
+                <p>
+                    <b>GET/:</b> https://hellohunter.herokuapp.com/api/characters?name=<i>IsaacNetero</i>
+                    <br><b>...</b>
+                    <br>Status: <b>200 (OK), JSON response</b>:
+                    <br>&emsp;{
+                    <br>&emsp;&emsp;"id": 11,
+                    <br>&emsp;&emsp;"name": "Isaac Netero",
+                    <br>&emsp;&emsp;"age": "110+",
+                    <br>&emsp;&emsp;<b>...</b>
+                    <br>&emsp;}
+                </p>
+                <hr>
+                <p>
+                    <b>GET/:</b> https://hellohunter.herokuapp.com/api/characters?name=<i>Naruto</i>
+                    <br><b>...</b>
+                    <br>Status: <b>404 (Error), Not Found</b>:
+                    <br>&emsp;{
+                    <br>&emsp;&emsp;"userRequest": "Naruto",
+                    <br>&emsp;&emsp;"result": "Sorry, no data found :("
+                    <br>&emsp;}
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- <div>https://hellohunter.herokuapp.com/api/characters?</div> -->
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -4,7 +4,11 @@ const logotype = document.querySelector('#logotype');
 const dropDown = document.querySelector('#dropdown-toggle')
 const submenu = document.querySelector('#submenu');
 
-if (isHomePage === '/index.html' || isHomePage === '/' || isHomePage === '/hellohunter/') { // Home page
+window.onload = () => {
+    logotype.style.opacity = 1;
+}
+
+if (isHomePage === '/' || isHomePage === '/hellohunter/') { // Home page
     const stars = document.querySelector('#stars');
     const moon = document.querySelector('#moon');
     const mountainsBehind = document.querySelector('#mountains-behind');
@@ -35,16 +39,19 @@ if (isHomePage === '/index.html' || isHomePage === '/' || isHomePage === '/hello
             }
         })
     })
-} else { // Any other character page
-
+}
+if (document.location.pathname.indexOf('characters') != -1) { // Any other character page
     const videoBg = document.querySelector('.video-bg');
+    const content = document.querySelector('.char-section');
+
+    window.onload = () => {
+        content.style.opacity = 1;
+    }
+
     videoBg.addEventListener('canplay', () => {
         setTimeout(() => videoBg.play(), 700);
     })
 
-    window.onload = () => {
-        logotype.style.opacity = 1;
-    }
 }
 
 
